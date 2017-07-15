@@ -20,3 +20,8 @@ gulp.task('browser-sync', function() {
         }
     });
 });
+
+gulp.task('watch', ['browser-sync'], function() {
+
+  gulp.watch('./jade', ['templates']);
+});
