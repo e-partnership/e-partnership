@@ -1,0 +1,27 @@
+doctype transitional
+head
+  title Easy Partnership LLC
+  meta(http-equiv='Content-type', content='text/html; charset=utf-8')
+  link(rel='shortcut icon', href='css/images/favicon.ico')
+  link(rel='stylesheet', href='css/style.css', type='text/css', media='all')
+  //if IE 6
+    link(rel='stylesheet', href='css/ie6.css', type='text/css', media='all')
+    script(src='js/png-fix.js', type='text/javascript')
+  script(src='js/jquery-1.4.2.js', type='text/javascript')
+  script(src='js/jquery.jcarousel.js', type='text/javascript')
+  script(src='js/js-func.js', type='text/javascript')
+// Header 
+header.header
+  .shell.flex.header__main
+    div
+      a(href="http://e-partnership.net")
+        img.header__logo(alt="logo" src="css/images/logo.png")
+    div
+      #navigation
+        ul
+          li
+            a(class=page === 'index' ? 'active' : '', href='index.html') Главная
+          li
+            a(class=page === 'about' ? 'active' : '', href='about.html') О нас
+          li
+            a(class=page === 'contact' ? 'active' : '', href='contact.html') Контакты

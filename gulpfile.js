@@ -7,7 +7,9 @@ gulp.task('templates', function() {
  
   gulp.src('./jade/*.jade')
     .pipe(jade({
-    //   locals: YOUR_LOCALS
+      locals: {
+        //   path: path
+      }
     }))
     .pipe(gulp.dest('./'))
 });
@@ -21,7 +23,11 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('watch', ['browser-sync'], function() {
-
-  gulp.watch('./jade', ['templates']);
+gulp.task('watch', function() {
+  gulp.watch('./jade/**/*.jade', ['templates'], function() {
+       browserSync.reload();
+  });
+ gulp.watch("./*.html").on('change', browserSync.reload);
 });
+
+gulp.task('default', ['browser-sync', 'watch'])
