@@ -6,7 +6,7 @@ body {
     font-family: "Lucida Sans", Arial, Helvetica, sans-serif;
     color: #4a4a4a;
     background: #fff url(images/bg.gif) repeat-x 0 106px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 a { color: #0252aa; text-decoration: none; cursor:pointer; }
@@ -110,6 +110,10 @@ textarea { overflow: auto; }
 
 .font12 { font-size: 22px; font-weight: normal; margin-bottom: 5px;  margin: 35px 0 0 0px; margin-bottom: 15px }
 
+.audio {
+    border: 2px solid #221fc7;
+    overflow: hidden;
+}
 
 
 

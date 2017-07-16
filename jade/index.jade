@@ -51,8 +51,7 @@ include parts/header.jade
         p 	  • sms-рассылки
         h4 Аренда call центра
         br
-        audio(controls)
-         source(src="assets/file.mp3" type="audio/mpeg")
+        
 
       .post
         h2 Вакансии
@@ -96,6 +95,9 @@ include parts/header.jade
             | Каждый текст будет соответствовать рекламным целям Вашей фирмы.
             | Сообщения будут доставлены тем, кому нужно, ведь мы очень тщательно выбираем адреса, когда готовим рассылки.
           br
+          div.audio
+            audio(controls)
+             source(src="assets/file.mp3" type="audio/mpeg")
           br
           .cl  
       .col.cols-2.last
