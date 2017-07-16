@@ -1,3 +1,4 @@
+First install nodejs and git
 ### How to run
 Run in command line
 ```
